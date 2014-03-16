@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="ie6 no-js"> <![endif]-->
+<!--[if IE 7]>         <html class="ie7 no-js"> <![endif]-->
+<!--[if IE 8]>         <html class="ie8 no-js"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Oscars generator / papermodelplane</title>
+
+    <meta name="description" content="What were the Oscars selfie celebrities really looking at on that screen? Upload a photo and generate your own meme." />
+    <meta name="keywords" content="oscars, selfie, generator, meme, aaron, draczynski, aaron draczynski, papermodelplane, developer" />
+    <meta name="author" content="Aaron Draczynski">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--[if lte IE 9]> 
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Varela+Round" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="oscars.js"></script>
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p id="upgrade">You're using an old browser, so this site probably won't work. You should <a href="http://www.firefox.com/">download Firefox</a>.</p>
+    <![endif]-->
+
+    <div id="container">
+      <h1>Oscars phone screen generator</h1>
+
+      <div id="uploader">
+        <label for="upload">Upload an image file:</label>
+        <input type="file" id="upload" name="upload" />
+      </div>
+
+      <div id="canvases">
+        <canvas id="base" width="500" height="605">Your browser doesn't support canvas. No fun for you.</canvas>
+        <canvas id="render" width="500" height="605">Your browser doesn't support canvas. No fun for you.</canvas>
+      </div>
+
+      <div id="saved">
+        Your image is now available at <a href="#" target="_blank">this URL</a>
+      </div>
+
+      <div id="toolbox">
+        <button id="nudge-up">Nudge up</button>
+        <button id="nudge-down">Nudge down</button>
+        <button id="nudge-left">Nudge left</button>
+        <button id="nudge-right">Nudge right</button>
+        <button id="rotate-left">Rotate counter-clockwise</button>
+        <button id="rotate-right">Rotate clockwise</button>
+        <br />
+        <button id="save">Save image / get URL</button>
+        <button id="reset-scale">Reset image to original size</button>
+      </div>
+    </div>
+
+    <div id="featured">
+      <h3>Samples</h3>
+      <a href="http://i.imgur.com/WEsn0Jj.png" target="_blank">
+        <img src="http://i.imgur.com/WEsn0Jj.png" width="100" height="121" alt="Oscars meme" />
+      </a>
+      <a href="http://i.imgur.com/W2XpS7Z.png" target="_blank">
+        <img src="http://i.imgur.com/W2XpS7Z.png" width="100" height="121" alt="Oscars meme" />
+      </a>
+      <a href="http://i.imgur.com/HmW5Pbr.png" target="_blank">
+        <img src="http://i.imgur.com/HmW5Pbr.png" width="100" height="121" alt="Oscars meme" />
+      </a>
+      <a href="http://i.imgur.com/GzfU5vt.png" target="_blank">
+        <img src="http://i.imgur.com/GzfU5vt.png" width="100" height="121" alt="Oscars meme" />
+      </a>
+      <a href="http://i.imgur.com/1nFhOuN.png" target="_blank">
+        <img src="http://i.imgur.com/1nFhOuN.png" width="100" height="121" alt="Oscars meme" />
+      </a>
+    </div>
+
+    <footer>
+      by <a href="http://www.papermodelplane.com/" title="papermodelplane / Aaron Draczynski">papermodelplane</a> / <a href="https://twitter.com/developer" title="Aaron Draczynski on Twitter">@developer</a>
+    </footer>
+  </body>
+</html>
